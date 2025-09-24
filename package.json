@@ -1,0 +1,25 @@
+{
+  "name": "simple-nodejs-backend",
+  "version": "1.0.0",
+  "description": "A simple Node.js backend application with Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "mocha test/unit_tests.js --exit"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  }
+}

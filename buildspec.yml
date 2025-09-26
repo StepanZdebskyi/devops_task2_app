@@ -25,6 +25,8 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - echo Writing image definitions file...
       - printf '[{"name":"stepan-container","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - cat imagedefinitions.json
+      - echo Image pushed successfully to $REPOSITORY_URI:$IMAGE_TAG
 
 artifacts:
   files:
